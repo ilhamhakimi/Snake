@@ -1,0 +1,10 @@
+[package]
+name = "Snake"
+version = "0.1.0"
+authors = ["Ilham Hakimi <ilhamhakimikamarzaman@gmail.com>"]
+description = "A game of snek and aple"
+license = "OwO"
+
+[dependencies]
+rand = "*"
+piston_window = "*"
