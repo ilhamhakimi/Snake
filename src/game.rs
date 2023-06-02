@@ -43,6 +43,10 @@ impl Game {
 
     pub fn key_pressed(&mut self, key: Key) {
         if self.game_over {
+            match key {
+            Key::Space => self.restart(),
+            _ => (),
+            }
             return;
         }
 
@@ -84,9 +88,6 @@ impl Game {
         self.waiting_time += delta_time;
 
         if self.game_over {
-            if self.waiting_time > RESTART_TIME {
-                self.restart();
-            }
             return;
         }
 
@@ -147,7 +148,7 @@ impl Game {
         self.waiting_time = 0.0;
         self.food_exists = true;
         self.food_x = 6;
-        self.food_y = 4;
+        self.food_y = 6;
         self.game_over = false;
     }
 }
