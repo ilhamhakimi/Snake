@@ -1,5 +1,5 @@
 [package]
-name = "Snake"
+name = "snake"
 version = "0.1.0"
 authors = ["Ilham Hakimi <ilhamhakimikamarzaman@gmail.com>"]
 description = "A game of snek and aple"
